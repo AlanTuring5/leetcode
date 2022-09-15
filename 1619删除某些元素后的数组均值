@@ -186,3 +186,23 @@ function heapSort(arr){
         downAdjust(arr,0,i)
     }
 }
+
+//计数排序
+function countSort(arr){
+    let countArray = [];
+    for(let i=0;i<arr.length;i++){
+        if(countArray[arr[i]]){
+            countArray[arr[i]]++;
+            continue;
+        }
+        countArray[arr[i]] = 1;
+    }
+    let index = 0;
+    let sortArray = []
+    for(let i=0;i<countArray.length;i++){
+        for(let j=0;j<countArray[i];j++){
+            sortArray[index++] = i;
+        }
+    }
+    return sortArray;
+}
