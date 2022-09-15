@@ -7,7 +7,7 @@
  */
 var trimMean = function (arr) {
     const len = arr.length;
-    // 自带排序算法（实现：双重循环排序）
+    // 自带排序算法（JS sort原理：https://zhuanlan.zhihu.com/p/33626637）
     // arr.sort((a,b)=> a-b);
     maopaoSort(arr);
     let sum = 0;
