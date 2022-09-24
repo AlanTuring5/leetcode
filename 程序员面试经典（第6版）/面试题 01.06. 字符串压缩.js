@@ -6,6 +6,10 @@
  * @param {string} S
  * @return {string}
  */
+
+// 执行用时：56 ms, 在所有 JavaScript 提交中击败了97.88 %的用户
+// 内存消耗：42.9 MB, 在所有 JavaScript 提交中击败了98.12 %的用户
+
 var compressString = function (S) {
     let len = S.length;
     // 空或一个字母
